@@ -1,0 +1,72 @@
+{
+  "name": "@xpack-dev-tools/openocd",
+  "version": "0.10.0-15.1",
+  "description": "A binary xPack with OpenOCD",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git-log": "git log --pretty='%cd * %h %s' --date=short"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpack-dev-tools/openocd-xpack.git"
+  },
+  "keywords": [
+    "xpack",
+    "openocd"
+  ],
+  "author": {
+    "name": "Liviu Ionescu",
+    "email": "ilg@livius.net",
+    "url": "https://github.com/ilg-ul"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpack-dev-tools/openocd-xpack/issues"
+  },
+  "homepage": "https://github.com/xpack-dev-tools/openocd-xpack#readme",
+  "devDependencies": {},
+  "peerDependencies": {},
+  "bundledDependencies": [],
+  "optionalDependencies": {},
+  "xpack": {
+    "binaries": {
+      "destination": "./.content",
+      "baseUrl": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15",
+      "skip": 1,
+      "platforms": {
+        "darwin-x64": {
+          "sha256": "370915b252ff3096b46663943fa040296d75991431228c5cfe315082cff10cab",
+          "fileName": "xpack-openocd-0.10.0-15-darwin-x64.tar.gz"
+        },
+        "linux-arm64": {
+          "sha256": "874c0bb93812109f4136b8b4670702ae4d76aa0d6327989a30596cabf4e052b5",
+          "fileName": "xpack-openocd-0.10.0-15-linux-arm64.tar.gz"
+        },
+        "linux-arm": {
+          "sha256": "7697144b4f6581aa0b16e02b8c07f4b91ad861088263327c21fa340b1854ca06",
+          "fileName": "xpack-openocd-0.10.0-15-linux-arm.tar.gz"
+        },
+        "linux-x86": {
+          "sha256": "68f02f2b392c2036702a7da9f418203b60f24aea30b59154e9e5042c1dc567dc",
+          "fileName": "xpack-openocd-0.10.0-15-linux-x32.tar.gz"
+        },
+        "linux-x64": {
+          "sha256": "0a880ef296da083c4eb06ed589181414ae73d64a7dcec5642676207aeacc3e54",
+          "fileName": "xpack-openocd-0.10.0-15-linux-x64.tar.gz"
+        },
+        "win32-x86": {
+          "sha256": "34f05809057ca851ac9c7f8925095abbf9b0c3594a7ca904e4bed3a7f2edfbc8",
+          "fileName": "xpack-openocd-0.10.0-15-win32-x32.zip"
+        },
+        "win32-x64": {
+          "sha256": "6bd6999f7371f68ccc861cf84133feef9976e91fc6a29ef2740d6bd3e4ff203f",
+          "fileName": "xpack-openocd-0.10.0-15-win32-x64.zip"
+        }
+      }
+    },
+    "bin": {
+      "openocd": "./.content/bin/openocd"
+    }
+  }
+}
