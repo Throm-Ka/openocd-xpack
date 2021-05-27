@@ -43,7 +43,7 @@ function build_versions()
   # OPENOCD_GIT_BRANCH=${OPENOCD_GIT_BRANCH:-"xpack-develop"}
   OPENOCD_GIT_COMMIT=${OPENOCD_GIT_COMMIT:-""}
 
-  README_OUT_FILE_NAME="README-${RELEASE_VERSION}.md"
+  #README_OUT_FILE_NAME="README-${RELEASE_VERSION}.md"
 
   # -------------------------------------------------------------------------
 
